@@ -1,0 +1,412 @@
+body{
+    box-sizing: border-box;
+    background-color: #f3f5fc;
+}
+
+
+
+/*logo*/
+.logodealura{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0%;
+    position: absolute;
+    width: 10%;
+    left: 5%;
+    top: 5%;
+}
+
+/*input*/
+
+.text{
+    position:absolute;
+    width: 45%;
+    height: 30%;
+    left:15%;
+    top: 29%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    color: #0a3871;
+    outline: none;
+    background: #f3f5fc;
+    resize: none;
+}
+
+.text::placeholder {
+    color: #0a3871;
+    text-transform: capitalize;
+}
+.text:hover {
+    border-bottom: solid 1px #0a3871;
+}
+
+/*rectangulo*/
+.rectangulo {
+    position: absolute;
+    width: 27%;
+    height: 90%;
+    left: 70%;
+    margin-top: 2%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.8);
+    border-radius: 32px;
+}
+
+/*muñeco*/
+.muñeco {
+    position: relative;
+    display: block;
+    margin: 10% auto;
+    width: 60%;
+    top: 50px;
+}
+
+/*mensaje encontrado*/
+
+.mensajeEncontrado {
+    position: relative;
+    width: 200px;
+    height: auto;
+    top: 60px;
+    flex: auto;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+}
+
+/*mensaje encriptado*/
+.mensajeEncriptado {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%;
+    height: 70%;
+    top: 20px;
+    flex: auto;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+}
+
+
+/*ingresetexto*/
+.ingresaTexto{
+    position: relative;
+    width: 300px;
+    height: auto;
+    top: 100px;
+    flex: auto;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+
+.ingresaTexto::first-letter{
+    text-transform: uppercase;
+}
+
+/*solo minusculas*/
+
+.letras{
+    position: absolute;
+    left: 16%;
+    top: 70%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    margin: 0px 8px;
+    padding-left: 2rem;
+}
+
+
+/*vector*/
+.vector{
+    position: absolute;
+    left: -5%;
+    width: 10%;
+}
+
+
+/*butom*/
+.contenedorBotones{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 50%;
+}
+
+.contenedorBotones .botonEncriptar{
+    display: inline;
+    padding: 24px;
+    position: static;
+    width: 40%;
+    background: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-family: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color:#ffffff;
+}
+
+.botonCopiar{
+    display: block;
+    margin: 0 auto;
+    padding: 24px;
+    width: 40%;
+    border-radius: 24px;
+    background: #0a3871;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    display: none;
+}
+
+
+.contenedorBotones .botonEncriptar::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+.contenedorBotones .botonDesencriptar {
+    display: inline;
+    padding: 24px;
+    position: static;
+    width: 40%;
+    background: #d8efe8;
+    box-sizing: border-box;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.contenedorBotones .botonDesencriptar::first-letter{
+    text-transform: uppercase;
+}
+
+/*footer*/
+footer{
+    position: absolute;
+    top: 93%;
+    left: 3%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+/*tablets-mobile*/
+
+@media screen and (max-width:1100px){
+    .logodealura,
+    .text,
+    .rectangulo,
+    .mensajeEncontrado,
+    .mensajeEncriptado,
+    .ingresaTexto,
+    .letras,
+    .vector,
+    footer
+    {
+        position: inherit;
+    }
+
+
+    .logodealura{
+        margin: 50px 0 50px 0;
+    }
+
+    .text{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    .contenedorBotones{
+        position: inherit;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+
+    .muñeco{
+        opacity: 0;
+        display:none;
+        width: 0.1px;
+        margin: 0;
+    }
+
+
+    .rectangulo{
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .mensajeEncriptado{
+        margin: 1 rem auto;
+    }
+
+    .letras{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .vector{
+        width: 1rem;
+    }
+
+    footer{
+        margin: 2rem;
+    }
+
+    .contenedorBotones{
+        position: inherit;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .logodealura,
+    .text,
+    .rectangulo,
+    .mensajeEncontrado,
+    .mensajeEncriptado,
+    .ingresaTexto,
+    .letras,
+    .vector,
+    footer
+    {
+        position: inherit;
+    }
+
+
+    .logodealura{
+        margin: 50px 0 50px 0;
+        width: 5rem;
+    }
+
+    .text{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .letras {
+        font-size: 1.2rem;
+    }
+
+    .ingresaTexto{
+        margin: 0 auto;
+    }
+
+    .contenedorBotones{
+        position: inherit;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+
+    .contenedorBotones,
+    .botonEncriptar,
+    .contenedorBotones,
+    .botonDesencriptar{
+        width: 90%;
+        margin-top: 1 rem;
+    }
+
+    .botonCopiar{
+        padding: 0.5rem;
+    }
+
+
+    .muñeco{
+        opacity: 0;
+        display:none;
+        width: 0.1px;
+        margin: 0;
+    }
+
+    .rectangulo{
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .mensajeEncriptado{
+        margin: 1 rem auto;
+    }
+
+    .letras{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .vector{
+        width: 1rem;
+    }
+
+    footer{
+        margin: 2rem;
+    }
+
+
+}
